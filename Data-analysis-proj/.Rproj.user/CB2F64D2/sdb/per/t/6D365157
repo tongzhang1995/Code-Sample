@@ -1,0 +1,17 @@
+{
+    "contents" : "dir.create(\"rawdata\", showWarnings = TRUE)\ndir.create(\"data\", showWarnings = TRUE)\ndir.create(\"report\", showWarnings = TRUE)\ndir.create(\"images\", showWarnings = TRUE)\n\ndownload.file(url = \"ftp://eclipse.ncdc.noaa.gov/pub/ibtracs/v03r06/wmo/hurdat_format/basin/Basin.NA.ibtracs_hurdat.v03r06.hdat\",\n              destfile = \"rawdata/IBTrACS\")\ndownload.file(url = \"ftp://eclipse.ncdc.noaa.gov/pub/ibtracs/v03r06/wmo/csv/basin/Basin.EP.ibtracs_wmo.v03r06.csv\",\n              destfile = \"rawdata/EastP.csv\")\ndownload.file(url = \"ftp://eclipse.ncdc.noaa.gov/pub/ibtracs/v03r06/wmo/csv/basin/Basin.NA.ibtracs_wmo.v03r06.csv\",\n              destfile = \"rawdata/NorthA.csv\")\n\ndescription = \"Description: \\n     This project analyzes the frequency, location, duration of storms from East Pacific and North Altantic from 1980s to 2010s. Furthermore, this project reconstructs the trajectory of each storm from 1980s to 2010s.\\n\\n\"\nauthorInfo = \"Author: \\n     Tong Zhang, UC Berkeley, Zhiqiang Liao, UC Berkeley\\n\\n\"\norganization = \"Organization: \\n     code: containing all the script files, \\n     data: containing csv files that produced by script files, \\n     images: containing all the images that produced by script files, \\n     rawdata: containing the original files that download from eclipse.ncdc.noaa.gov, \\n     report: containing a pdf file that describe all statisical analysis and graphic analysis.\"\nfile.create(\"README.md\")\ncat(description, file = \"README.md\", append = FALSE)\ncat(authorInfo, file = \"README.md\", append = TRUE)\ncat(organization, file = \"README.md\", append = TRUE)\n\n",
+    "created" : 1439597184273.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "813255735",
+    "id" : "6D365157",
+    "lastKnownWriteTime" : 1439599471,
+    "path" : "~/Dropbox/stat133_final/Final/skeleton.R",
+    "project_path" : "skeleton.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
